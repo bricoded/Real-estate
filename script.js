@@ -1,3 +1,4 @@
+
 const searchBtn = document.querySelector('nav .toggler');
 const closeBtn = document.querySelector('.box-collapse .close')
 const searchForm = document.querySelector('.box-collapse');
@@ -13,20 +14,20 @@ closeBtn.addEventListener('click', function () {
   darkOverlay.classList.remove('show');
 })
 
+const hamburger = document.querySelector('.hamburger');
+const navContainer = document.querySelector('nav .container')
+const menu = document.querySelector('nav ul');
+const icon = document.querySelector('.btn-icon');
+hamburger.addEventListener('click', function () {
+  hamburger.classList.toggle('open');
+  menu.classList.toggle('show');
+  icon.classList.toggle('show');
+  navContainer.classList.toggle('show');
+})
 
-const splide = new Splide('.splide', {
-  type: 'loop', //slide, loop, fade
-  // padding: { y: 10 }, //css values
-  gap: '20px',
-  speed: 500, //transition in milliseconds
-  // fixedWidth: '10vw',
-  // width: '100vw',
-  perPage: 3,
-  start: 1,
-  perMove: 1,
-  autoplay: true,
-  interval: 3000,
-  arrows: false,
-  pauseOnHover: true,
+const disabledLinks = document.querySelectorAll('nav li.dropdown');
+disabledLinks.forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+  })
 });
-splide.mount();

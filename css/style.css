@@ -201,7 +201,7 @@
 }
 
 #properties ul.splide__list>li:hover img {
-  transform: scale(1.2);
+  transform: scale(1.2) translateX(-50%);
 }
 
 #properties ul.splide__list>li:before {
@@ -229,6 +229,9 @@
   height: 100%;
   width: auto;
   transition: 0.8s all ease-in-out;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #properties .splide__pagination {

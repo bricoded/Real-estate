@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Generation reality | Rock-Pillar-Rd-Clayton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/houses.css">
+  <link rel="stylesheet" href="../css/nav-footer.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js" defer></script>
+  <script src="../script.js" defer></script>
+  <script src="./houses.js" defer></script>
+</head>
+
+<body>
+  <div class="click-overlay"></div>
+  <div class="box-collapse">
+    <div class="title-wrapper">
+      <h3 class="title">Search Property</h3>
+    </div>
+    <span class="close bi bi-x"></span>
+    <div class="form">
+      <form action="">
+        <div class="row">
+          <div class="form-group">
+            <label for="keyword">Keyword</label>
+            <input type="search" placeholder="Keyword" class="form-control">
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label for="Type">Type</label>
+              <select class="form-control form-select form-control-a" id="Type">
+                <option>All Type</option>
+                <option>For Rent</option>
+                <option>For Sale</option>
+                <option>Open House</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label for="Type">City</label>
+              <select class="form-control form-select form-control-a" id="Type">
+                <option>All Cities</option>
+                <option>Alabama</option>
+                <option>Arizona</option>
+                <option>California</option>
+                <option>Colorado</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label for="Type">Bedrooms</label>
+              <select class="form-control form-select form-control-a" id="Type">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label for="Type">Garages</label>
+              <select class="form-control form-select form-control-a" id="Type">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label for="Type">Bathrooms</label>
+              <select class="form-control form-select form-control-a" id="Type">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label for="Type">Min Price</label>
+              <select class="form-control form-select form-control-a" id="Type">
+                <option>Unlimited</option>
+                <option>$50,000</option>
+                <option>$100,000</option>
+                <option>$150,000</option>
+                <option>$200,000</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button type="submit">Search Property</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <nav>
+    <div class="container">
+      <div class="hamburger">
+        <div class="btn-icon">
+          <div class="menu-line-top"></div>
+          <div class="menu-line-middle"></div>
+          <div class="menu-line-bottom"></div>
+        </div>
+      </div>
+      <ul class="links">
+        <li class="nav-item">
+          <a href="../index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="../properties.html" class="nav-link">Properties</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="" class="nav-link dropdown">Pages</a>
+          <div class="dropdown-menu">
+            <a href="" class="dropdown-item">Property Single</a>
+            <a href="" class="dropdown-item">Blog Single</a>
+            <a href="" class="dropdown-item">Agent Grid</a>
+            <a href="" class="dropdown-item">Agent Single</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="" class="nav-link dropdown">Quick Links</a>
+          <div class="dropdown-menu">
+            <a href="" class="dropdown-item">Buy</a>
+            <a href="" class="dropdown-item">Rent</a>
+            <a href="" class="dropdown-item">Sell</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="toggler">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+  <section class="house">
+    <div class="container">
+      <div class="header">
+        <div class="right">
+          <h1>2489 Rock Pillar Rd Clayton</h1>
+          <p> PA 19104</p>
+        </div>
+        <div class="d-flex justify-content-lg-end left">
+          <div aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="../properties.html">Properties Grid</a></li>
+              <li class="breadcrumb-item active" aria-current="page">2489 Rock Pill...</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <section class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/1.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/2.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/3.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/4.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/5.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/6.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/7.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/8.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/9.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/10.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/11.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/12.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/13.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/14.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/15.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/16.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/17.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/18.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/19.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/20.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/21.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/22.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/23.jpeg);"></li>
+            <li class="splide__slide" style="background-image: url(https://cdn.pixelbin.io/v2/purple-river-6644/original/real_estate/RD_clayton/24.jpeg);"></li>
+          </ul>
+        </div>
+      </section>
+      <div class="content">
+        <div class="quick-summary">
+          <div class="price">
+            <div class="icon">
+              <i class="bi bi-cash">$</i>
+            </div>
+            <p>365,000 </p>
+          </div>
+          <h2 class="title">Quick Summary</h2>
+          <div class="description">
+            <p>Location:</p>
+            <small>2489 Rock Pillar Rd Clayton</small>
+          </div>
+          <div class="description">
+            <p>Property Type:</p>
+            <small>Single Family Residential </small>
+          </div>
+          <div class="description">
+            <p>Status:</p>
+            <small>Sale</small>
+          </div>
+          <div class="description">
+            <p>Area:</p>
+            <small>1,877 Sq Ft</small>
+          </div>
+          <div class="description">
+            <p>Beds:</p>
+            <small>4</small>
+          </div>
+          <div class="description">
+            <p>Baths:</p>
+            <small>2</small>
+          </div>
+          <div class="description">
+            <p>Year Built:</p>
+            <small>1920</small>
+          </div>
+          <div class="description">
+            <p>Style:</p>
+            <small>Ranch</small>
+          </div>
+          <div class="description">
+            <p>Community:</p>
+            <small>Rock Pillar Estates </small>
+          </div>
+          <div class="description">
+            <p>Lot Size:</p>
+            <small>0.93 Acres</small>
+          </div>
+          <div class="description">
+            <p>Lot Size:</p>
+            <small>0.93 Acres</small>
+          </div>
+        </div>
+        <div class="property-description">
+          <div class="section-header">
+            <h2 class="title">Property Description</h2>
+            <p><span>About this home</span>
+              Price reduced! Unrestricted! NO HOA!! Recently Remodeled 4 bedrooms, 2 bath home ready for new owners!
+              Huge front porch to enjoy the . 93 acre country living with mature trees. Fenced back yard. Open concept
+              kitchen-dining-living rooms with new LVP flooring though out house.
+            </p>
+            <p> Bright kitchen with new lighting, new cabinets & quartz countertops, all new stainless appliances
+              including a wifi stove. Large bedrooms. New 2022 roof & water heater. Almost all new windows. New separate
+              2 car 24x24 garage/storage, not wired. Come check it out!
+            </p>
+          </div>
+          <div class="section-ul">
+            <h2 class="title">Amenities</h2>
+            <ul>
+              <div>
+                <li>Balcony</li>
+                <li>Deck</li>
+                <li>Parking</li>
+              </div>
+              <div>
+                <li>Outdoor Kitchen</li>
+                <li>Tennis Courts</li>
+                <li>Sun Room</li>
+              </div>
+              <div>
+                <li>Cable Tv</li>
+                <li>Internet</li>
+                <li>Concrete Flooring</li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="map">
+    <div class="container">
+      <h2 class="title">Map</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d811.2904556325822!2d-78.41741323040098!3d35.574397489091126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac6ef7c0f77c47%3A0x979eed06e8d8a70e!2s2489%20Rock%20Pillar%20Rd%2C%20Clayton%2C%20NC%2027520%2C%20USA!5e0!3m2!1sen!2sng!4v1689102339084!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">EstateAgency</h3>
+            </div>
+            <div class="w-body-a">
+              <p>
+                Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis
+                sed aute irure.
+              </p>
+            </div>
+            <div class="w-footer-a">
+              <ul class="list-unstyled">
+                <li>
+                  <span>Phone .</span> contact@example.com
+                </li>
+                <li>
+                  <span>Email .</span> +54 356 945234
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 section-md-t3">
+          <div class="widget-2">
+            <div class="w-header">
+              <h3>The Company</h3>
+            </div>
+            <div class="w-body">
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="">Site Map</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="">Legal</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="">Agent Admin</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="">Careers</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="">Affiliate</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="nav-footer">
+          <ul class="centered-ul">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Properties</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="socials">
+          <ul class="centered-ul">
+            <li>
+              <a href="">
+                <i class="bi bi-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="bi bi-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="bi bi-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="bi bi-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright-footer">
+          <p class="copyright color-text-a">
+            © Copyright
+            <span class="color-a">EstateAgency</span> All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="back-to-top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+  <div class="phone">
+    <i class="bi bi-phone"></i>
+  </div>
+</body>
+
+</html>

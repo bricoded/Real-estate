@@ -1,0 +1,185 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.header .right {
+  border-left: 3px solid #2eca6a;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.breadcrumb-item a {
+  color: #000;
+  text-decoration: none;
+}
+
+h2.title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 15px;
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+
+h2.title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background-color: #2eca6a;
+  width: 70px;
+}
+
+.house {
+  padding-top: 200px;
+  margin-bottom: 40px;
+}
+
+.quick-summary {
+  width: 30%;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.price .icon {
+  display: flex;
+  align-items: center;
+  padding: 2rem 3rem 2rem 2.5rem;
+  border: 5px solid #2eca6a;
+}
+
+.price i {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  font-size: 4rem;
+  color: #000000;
+}
+
+.price p {
+  font-size: 2.5rem;
+  margin-left: -40px;
+  color: #000;
+  font-weight: 600;
+}
+
+.splide {
+  width: 60%;
+  margin: auto;
+}
+
+.splide li.splide__slide {
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.splide__pagination {
+  bottom: -20px;
+}
+
+.splide__pagination__page.is-active {
+  background-color: #26a356;
+  width: 40px;
+  transform: none;
+}
+
+.splide__pagination__page {
+  border-radius: 0;
+  transition: .3s ease-in-out;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.description p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.property-description {
+  width: 58%;
+}
+
+.property-description p {
+  margin-bottom: 20px;
+}
+
+.property-description span {
+  color: #2eca6a;
+  display: block;
+}
+
+.property-description .fees {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+  font-size: 0.8rem;
+}
+
+.section-ul ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  row-gap: 10px;
+}
+
+.section-ul li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.section-ul li:after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  background-color: #313131;
+  top: 15px;
+  left: 0;
+}
+
+.section-ul div {
+  width: 33%;
+}
